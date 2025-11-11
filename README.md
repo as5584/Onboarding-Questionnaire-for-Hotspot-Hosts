@@ -137,9 +137,3 @@ lib/
 
 ```
 
----
-
-✅ **You can now copy-paste this entire block** directly into your `README.md` — all Markdown formatting, code blocks, and emoji icons will render perfectly on GitHub.
-
-Would you like me to include **badges** (like Flutter version, license, build status, etc.) and a **demo GIF section** at the top to make it look even more polished for GitHub?
-```
