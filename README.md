@@ -98,3 +98,54 @@ cd <Onboarding-Questionnaire-for-Hotspot-Hosts>
 
 3. **Screen Recording:**
    - Prepare a short demo video showcasing the app's functionality, especially the onboarding flow, recording features, and UI elements.
+2️⃣ Install Dependencies
+flutter pub get
+
+3️⃣ Run the Application
+
+Connect your device or start an emulator, then run:
+
+flutter run
+
+4️⃣ Optional: Build Release APK
+
+To generate a release build:
+
+flutter build apk --release
+
+🧩 Project Structure
+
+The codebase follows standard Flutter conventions for scalability and clarity:
+
+lib/
+│
+├── screens/
+│   ├── experience_selection_screen.dart
+│   └── onboarding_question_screen.dart
+│
+├── services/
+│   └── api_service.dart
+│
+├── widgets/
+│   ├── experience_card.dart
+│   ├── waveform_visualizer.dart
+│   └── custom_progress_indicator.dart
+│
+└── main.dart
+
+🧠 Notes on Implementation
+
+Error Handling:
+Comprehensive try–catch blocks and user-friendly error prompts for failed API calls and permission denials.
+
+Media Permissions:
+Microphone and camera permissions are requested dynamically at runtime.
+
+Recording Functionality:
+Audio and video features use platform-specific implementations ensuring smooth recording and playback on both Android and iOS.
+
+Responsiveness:
+All screens are fully responsive, adapting seamlessly across screen sizes.
+
+Code Quality:
+Organized, modular, and documented to ease future feature additions and state management upgrades.
