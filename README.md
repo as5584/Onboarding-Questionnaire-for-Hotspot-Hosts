@@ -1,52 +1,73 @@
 # luminus
 
+# Luminus
+
 # Flutter Onboarding Questionnaire for Hotspot Hosts
 
-This project is a Flutter application designed to guide potential hotspot hosts through an onboarding questionnaire. It consists of two main screens: Experience Type Selection and an Onboarding Question Screen with audio/video recording capabilities.
+This project is a **Flutter application** designed to guide potential hotspot hosts through an engaging onboarding process. It includes two main screens — **Experience Type Selection** and an **Onboarding Question Screen** — complete with **audio and video recording** capabilities.
+
+---
 
 ## 🚀 Features Implemented
 
 ### 1. Experience Type Selection Screen:
-*   Fetches a list of experiences from a provided API (`https://staging.chamberofsecrets.8club.co/v1/experiences?active=true`).
-*   Displays experiences as interactive "stamp-like" cards.
-*   Allows users to select multiple experience types.
-*   Unselected experience cards display images in grayscale.
-*   Includes a text field for users to describe their ideal hotspot (max 250 characters).
-*   Navigates to the next screen upon pressing "Next".
+- Fetches a list of experiences from the API endpoint:  
+  `https://staging.chamberofsecrets.8club.co/v1/experiences?active=true`
+- Displays experiences as **interactive “stamp-like” cards**.
+- Supports **multiple selection** of experience types.
+- Unselected experience cards appear in **grayscale**.
+- Includes a **text field** (max 250 characters) for users to describe their ideal hotspot.
+- Navigates to the **Onboarding Question Screen** upon tapping **Next**.
 
 ### 2. Onboarding Question Screen:
-*   Allows users to answer a question using text input (max 600 characters).
-*   Supports recording audio answers with a live waveform visualization.
-*   Supports recording video answers.
-*   Provides options to cancel or stop audio/video recordings.
-*   Allows deletion of recorded audio or video assets.
-*   Displays recorded audio/video with playback controls (play/pause, progress bar).
-*   Includes a dynamic UI that adjusts based on recording status and recorded assets.
-*   Features a custom animated wavy line progress indicator in the AppBar.
-*   Implements a visually appealing dark theme and custom UI elements matching the provided Figma design.
+- Users can answer questions using:
+  - **Text input** (max 600 characters)
+  - **Audio recording** (with live waveform)
+  - **Video recording**
+- Supports:
+  - Canceling or stopping recordings.
+  - Deleting recorded assets.
+  - Playback of recorded audio/video with custom UI controls.
+- Features:
+  - A **custom animated wavy line progress indicator** in the AppBar.
+  - Dynamic layout adjustments based on recording state.
+  - A **visually rich dark theme** aligned with Figma design specifications.
+
+---
 
 ## ✨ Brownie Points (Optional Enhancements)
 
-*   **UI/UX - Pixel Perfect Design:**
-    *   Achieved a design closely matching the provided Figma mockups, including:
-        *   Custom gradient for the AppBar title.
-        *   Dark theme with specific background colors and rounded corners.
-        *   "Stamp-like" UI for experience cards with custom clipping and grayscale effect.
-        *   Animated "Next" button with gradient text.
-        *   Custom progress indicator with an animated wavy line.
-        *   Refined UI for recorded audio/video playback elements.
-*   **Animations:**
-    *   Implemented card animation on selection to scroll the selected card to the beginning of the horizontal list.
-    *   Implemented animation for the "Next" button width change when recording controls appear/disappear.
-*   **State Management:** Currently uses `setState` for state management, which is suitable for this project's scope. *(Note: If you later integrate Riverpod/BLoC, update this section.)*
-*   **API Client:** Uses a custom `ApiService` for API calls. *(Note: If you integrate `Dio` here for enhanced network operations, update this section.)*
+### 🎨 UI/UX - Pixel Perfect Design
+- Achieved a **high-fidelity implementation** of the provided Figma mockups:
+  - Custom **AppBar gradient** for the title.
+  - **Dark theme** with nuanced shadows, rounded corners, and contrasts.
+  - **Stamp-style cards** using clipping and grayscale shaders.
+  - **Animated gradient text** for buttons.
+  - A refined **audio/video playback UI** with animations and transitions.
 
-## 🚀 Getting Started
+### 🧩 Animations
+- Smooth scroll animation to bring the **selected card** to the front.
+- Animated **Next button width transitions** based on the recording state.
 
-1.  **Clone the repository:**
-   
-     git clone <your-github-repo-url>
-     cd flutter-onboarding-questionnaire
+### ⚙️ State Management
+- Uses `setState` for simple, efficient state management.  
+  *(If migrating to Riverpod/BLoC in future, update this section.)*
+
+### 🌐 API Client
+- Built using a custom lightweight `ApiService` for network communication.  
+  *(Replace with `Dio` for more advanced request handling or interceptors if needed.)*
+
+---
+
+## 🧭 Getting Started
+
+Follow these steps to set up and run the project on your local machine.
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/as5584/Onboarding-Questionnaire-for-Hotspot-Hosts.git
+cd <Onboarding-Questionnaire-for-Hotspot-Hosts>
+
      Install dependencies:
 
       bash
