@@ -1,8 +1,4 @@
-Sure! Here’s the **same improved README** formatted cleanly — so you can **directly cut, copy, and paste** into your file without losing any Markdown formatting or style 👇
 
----
-
-````markdown
 # Luminus
 
 # Flutter Onboarding Questionnaire for Hotspot Hosts
