@@ -59,3 +59,21 @@ This project is a Flutter application designed to guide potential hotspot hosts 
 
     Copy
     flutter run
+
+    ### Notes on Implementation
+
+- The project structure follows standard Flutter practices with screens organized into `lib/screens/`.
+- Error handling for API calls and permissions is included.
+
+### How to Use This README
+
+1. **Replace Placeholders:**
+   - Replace `flutter-onboarding-questionnaire` in the "Clone the repository" step with your actual repository name.
+   - Replace `<your-github-repo-url>` with the URL of your GitHub repository.
+   - If you implemented Riverpod/BLoC or integrated Dio, update the "State Management" and "API Client" sections accordingly.
+
+2. **GitHub Repository:**
+   - Ensure your GitHub repository is public or accessible to the reviewer.
+
+3. **Screen Recording:**
+   - Prepare a short demo video showcasing the app's functionality, especially the onboarding flow, recording features, and UI elements.
