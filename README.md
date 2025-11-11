@@ -134,6 +134,3 @@ lib/
   Organized, modular, and documented to ease future feature additions and state management upgrades.
 
 ---
-
-```
-
