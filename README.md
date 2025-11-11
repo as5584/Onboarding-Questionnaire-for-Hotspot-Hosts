@@ -44,4 +44,18 @@ This project is a Flutter application designed to guide potential hotspot hosts 
 ## 🚀 Getting Started
 
 1.  **Clone the repository:**
-    
+   
+     git clone <your-github-repo-url>
+     cd flutter-onboarding-questionnaire
+     Install dependencies:
+
+      bash
+
+    Copy
+    flutter pub get
+    Run the application:
+
+    bash
+
+    Copy
+    flutter run
