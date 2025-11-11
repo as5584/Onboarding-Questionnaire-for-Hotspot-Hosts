@@ -2,15 +2,15 @@
 
 A new Flutter application.
 
-## Getting Started
+This project is a Flutter application designed to guide potential hotspot hosts through an onboarding questionnaire. It consists of two main screens: Experience Type Selection and an Onboarding Question Screen with audio/video recording capabilities.
 
-This project is a starting point for a Flutter application.
+🚀 Features Implemented1. Experience Type Selection Screen:•Fetches a list of experiences from a provided API (https://staging.chamberofsecrets.8club.co/v1/experiences?active=true).•Displays experiences as interactive "stamp-like" cards.•Allows users to select multiple experience types.•Unselected experience cards display images in grayscale.•Includes a text field for users to describe their ideal hotspot (max 250 characters).•Navigates to the next screen upon pressing "Next".
 
-A few resources to get you started if this is your first Flutter project:
+Onboarding Question Screen:•Allows users to answer a question using text input (max 600 characters).•Supports recording audio answers with a live waveform visualization.•Supports recording video answers.•Provides options to cancel or stop audio/video recordings.•Allows deletion of recorded audio or video assets.•Displays recorded audio/video with playback controls (play/pause, progress bar).•Includes a dynamic UI that adjusts based on recording status and recorded assets.•Features a custom animated wavy line progress indicator in the AppBar.•Implements a visually appealing dark theme and custom UI elements matching the provided Figma design.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+✨ Brownie Points (Optional Enhancements)•UI/UX - Pixel Perfect Design:◦Achieved a design closely matching the provided Figma mockups, including:▪Custom gradient for the AppBar title.▪Dark theme with specific background colors and rounded corners.▪"Stamp-like" UI for experience cards with custom clipping and grayscale effect.▪Animated "Next" button with gradient text.▪Custom progress indicator with an animated wavy line.▪Refined UI for recorded audio/video playback elements.•Animations:◦Implemented card animation on selection to scroll the selected card to the beginning of the horizontal list.◦Implemented animation for the "Next" button width change when recording controls appear/disappear.•State Management: Currently uses setState for state management, which is suitable for this project's scope. (Mention if you later integrate Riverpod/BLoC).•API Client: Uses a custom ApiService for API calls. (Mention if Dio is integrated here for enhanced network operations).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Getting Started1.Clone the repository:Shell Scriptgit clone <your-github-repo-url>
+cd flutter-onboarding-questionnaire2.Install dependencies:Shell Scriptflutter pub get3.Run the application:Shell Scriptflutter run
+
+Notes on Implementation•The project structure follows standard Flutter practices with screens organized into lib/screens/.•Error handling for API calls and permissions is included.How to use this:1.Replace Placeholders:◦flutter-onboarding-questionnaire in the "Clone the repository" step should be replaced with your actual repository name.◦<your-github-repo-url> needs to be replaced with the URL of your GitHub repository.◦If you did implement Riverpod/BLoC or integrate Dio, update the "State Management" and "API Client" sections accordingly.2.GitHub Repository: Make sure your GitHub repository is public or accessible to the reviewer.3.Screen Recording: Prepare a short demo video showcasing the app's functionality, especially the onboarding flow, recording features, and UI elements.
